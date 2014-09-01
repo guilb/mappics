@@ -35,7 +35,7 @@
 		map = new google.maps.Map(document.getElementById('map-canvas'),
 		mapOptions);
 		//http://jquery-ui-map.googlecode.com/svn/trunk/demos/json/demo.json
-		$.getJSON('http://localhost:3000/photos/index_json', function(data) { 
+		$.getJSON('/photos/index_json', function(data) { 
 			$.each( data, function(i, value) {
 
 				var myLatlng = new google.maps.LatLng(value.latitude, value.longitude);
