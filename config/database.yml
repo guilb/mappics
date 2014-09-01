@@ -18,17 +18,17 @@ development:
 test:
     adapter: mysql2
     encoding: utf8
-    host: us-cdbr-east-04.cleardb.com
+    host: eu-cdbr-west-01.cleardb.com
     port: 3306
-    database: heroku_79eed0fd99625ea
-    username: bd84d825df1e45
-    password: 99d4fea1
+    database: heroku_e1afb576426b834
+    username: be9b2a2d2f7c26
+    password: ca7dcdef
 
 production:
     adapter: mysql2
     encoding: utf8
-    host: us-cdbr-east-04.cleardb.com
+    host: eu-cdbr-west-01.cleardb.com
     port: 3306
-    database: heroku_79eed0fd99625ea
-    username: bd84d825df1e45
-    password: 99d4fea1
+    database: heroku_e1afb576426b834
+    username: be9b2a2d2f7c26
+    password: ca7dcdef
