@@ -11,6 +11,9 @@ gem 'mysql2'
 gem "rmagick", :require => 'RMagick'
 gem 'aws-sdk'
 gem "paperclip"
+gem "cocaine"
+
+gem 'exifr', '~> 1.1.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
