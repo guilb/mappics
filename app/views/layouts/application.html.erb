@@ -63,18 +63,19 @@
 		//http://jquery-ui-map.googlecode.com/svn/trunk/demos/json/demo.json
 		$.getJSON('/photos/index_json', function(data) { 
 			alert('test1');
+			var html = "";
 			$.each( data, function(i, value) {
 				alert('test2');
 				alert(data);
 				console.log(data);
 				var myLatlng = new google.maps.LatLng(value.latitude, value.longitude);
 
-				html = "";
+				
 				var files = value.files.split(",");
 				var ids = value.ids.split(",");
-				console.log('files');
-				console.log('ids');
-				console.log('files.length');
+				console.log(files);
+				console.log(ids);
+				console.log(files.length);
 				for (j = 0; j < files.length; j++) { 
 				    html += '<img src="https://s3-eu-west-1.amazonaws.com/map-pics/photos/' + ids[j]+ '/files/original/'+ files[j]+'" width="100">';
 				}
