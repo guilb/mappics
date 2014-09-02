@@ -9,7 +9,7 @@ Mappics::Application.configure do
     :s3_credentials => {
       :bucket => 'map-pics',
       :access_key_id => '',
-      :secret_access_key => '2YIs0hl0KBx7W/J/f/fCRP0+e8vUoUup2tcwR6mQ'
+      :secret_access_key => ''
     }
   }
   # Code is not reloaded between requests.
