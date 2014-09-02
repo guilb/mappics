@@ -1,15 +1,15 @@
 Mappics::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  ENV['AWS_ACCESS_KEY_ID'] = "AKIAIPEGBYB5NTOMSFVA";
-  ENV['AWS_SECRET_ACCESS_KEY'] = "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";
+  ENV['AWS_ACCESS_KEY_ID'] = "";
+  ENV['AWS_SECRET_ACCESS_KEY'] = "";
   config.paperclip_defaults = {
     :storage => :s3,
     :url =>':s3_domain_url',
     :path => "/:class/:id/:attachment/:style/:filename",
     :s3_credentials => {
       :bucket => 'map-pics',
-      :access_key_id => 'AKIAIPEGBYB5NTOMSFVA',
-      :secret_access_key => '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'
+      :access_key_id => '',
+      :secret_access_key => ''
     }
   }
   # Code is not reloaded between requests.
