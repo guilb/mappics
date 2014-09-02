@@ -72,6 +72,9 @@
 				html = "";
 				var files = value.files.split(",");
 				var ids = value.ids.split(",");
+				console.log('files');
+				console.log('ids');
+				console.log('files.length');
 				for (j = 0; j < files.length; j++) { 
 				    html += '<img src="https://s3-eu-west-1.amazonaws.com/map-pics/photos/' + ids[j]+ '/files/original/'+ files[j]+'" width="100">';
 				}
@@ -82,6 +85,7 @@
 					weight: value.weight,
 					content: html
 				});
+				console.log('test3');
 				bounds.extend(markers[i]);
 				console.log(bounds);
 				google.maps.event.addListener(markers[i], 'click', function() { 
