@@ -4,31 +4,13 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-    adapter: mysql2
-    encoding: utf8
-    host: eu-cdbr-west-01.cleardb.com
-    port: 3306
-    database: heroku_e1afb576426b834
-    username: be9b2a2d2f7c26
-    password: ca7dcdef
+    
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-    adapter: mysql2
-    encoding: utf8
-    host: eu-cdbr-west-01.cleardb.com
-    port: 3306
-    database: heroku_e1afb576426b834
-    username: be9b2a2d2f7c26
-    password: ca7dcdef
+
 
 production:
-    adapter: mysql2
-    encoding: utf8
-    host: eu-cdbr-west-01.cleardb.com
-    port: 3306
-    database: heroku_e1afb576426b834
-    username: be9b2a2d2f7c26
-    password: ca7dcdef
+
