@@ -7,7 +7,7 @@ attr_reader :html
 
   has_attached_file :file,
   :styles => {
-    :thumb40 => "40x40#"
+    :thumb60 => "60x60#"
   },
   :default_url => "/images/:style/user-missing.png"
   validates_attachment_content_type :file, :content_type => ["image/jpg", "image/jpeg", "image/png", "image/gif"]
