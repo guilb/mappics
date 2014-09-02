@@ -52,11 +52,14 @@
 
 	function initialize() {
 		var mapOptions = {
-			zoom: 1,
+			zoom: 4,
 			center: new google.maps.LatLng(-34.397, 150.644)
 		};
+		
 		map = new google.maps.Map(document.getElementById('map-canvas'),
 		mapOptions);
+		var bounds = new google.maps.LatLngBounds();
+	   
 		//http://jquery-ui-map.googlecode.com/svn/trunk/demos/json/demo.json
 		$.getJSON('/photos/index_json', function(data) { 
 			$.each( data, function(i, value) {
@@ -76,6 +79,7 @@
 					weight: value.weight,
 					content: html
 				});
+				bounds.extend(markers[i]);
 				google.maps.event.addListener(markers[i], 'click', function() { 
 					//alert("I am marker " + markers[i].title); 
 					var infowindow = new google.maps.InfoWindow({
@@ -85,9 +89,13 @@
 				});
 			});
 
+
 			var markerCluster = new MarkerClusterer(map); 
 			markerCluster.setCalculator(calc);
 			markerCluster.addMarkers(markers);
+			
+			map.fitBounds(bounds);
+		   
 
 		});
 
