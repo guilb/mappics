@@ -83,6 +83,7 @@
 					content: html
 				});
 				bounds.extend(markers[i]);
+				console.log(bounds);
 				google.maps.event.addListener(markers[i], 'click', function() { 
 					//alert("I am marker " + markers[i].title); 
 					var infowindow = new google.maps.InfoWindow({
