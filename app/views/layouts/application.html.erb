@@ -62,8 +62,9 @@
 	   
 		//http://jquery-ui-map.googlecode.com/svn/trunk/demos/json/demo.json
 		$.getJSON('/photos/index_json', function(data) { 
+			alert('test1');
 			$.each( data, function(i, value) {
-				alert('test');
+				alert('test2');
 				alert(data);
 				console.log(data);
 				var myLatlng = new google.maps.LatLng(value.latitude, value.longitude);
