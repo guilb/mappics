@@ -1,15 +1,15 @@
 Mappics::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  ENV['AWS_ACCESS_KEY_ID'] = "AKIAIELVEHTJEIRSJNKQ";
-  ENV['AWS_SECRET_ACCESS_KEY'] = "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";
+  ENV['AWS_ACCESS_KEY_ID'] = "";
+  ENV['AWS_SECRET_ACCESS_KEY'] = "";
   config.paperclip_defaults = {
     :storage => :s3,
     :url =>':s3_domain_url',
     :path => "/:class/:id/:attachment/:style/:filename",
     :s3_credentials => {
       :bucket => 'map-pics',
-      :access_key_id => 'AKIAIELVEHTJEIRSJNKQ',
-      :secret_access_key => '2YIs0hl0KBx7W/J/f/fCRP0+e8vUoUup2tcwR6mQ'
+      :access_key_id => '',
+      :secret_access_key => ''
     }
   }
   # In the development environment your application's code is reloaded on
